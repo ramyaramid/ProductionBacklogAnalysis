@@ -1,0 +1,1 @@
+select * from  "instagrid"."public"."sg_production_plan"

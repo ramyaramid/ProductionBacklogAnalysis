@@ -1,0 +1,13 @@
+version: 2 
+sources:
+  - name: instagrid
+    schema: public
+    
+    tables: 
+      - name: production_plan
+      - name: manufactured_units
+
+      
+    
+      
+      
