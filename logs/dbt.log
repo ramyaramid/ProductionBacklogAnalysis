@@ -35829,3 +35829,1282 @@ drop table if exists "instagrid"."public"."production_final__dbt_backup" cascade
 [0m17:33:55.574360 [debug] [MainThread]: Command `dbt run` succeeded at 17:33:55.574360 after 1.70 seconds
 [0m17:33:55.575370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170D88F4A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170DAD84CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170DAE6E3E0>]}
 [0m17:33:55.577370 [debug] [MainThread]: Flushing usage events
+[0m18:46:47.511876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEFE5F4A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF00A57FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF00A57CD0>]}
+
+
+============================== 18:46:47.519392 | 72953d0d-71d3-4711-8336-3e4b376a2931 ==============================
+[0m18:46:47.519392 [info ] [MainThread]: Running with dbt=1.5.1
+[0m18:46:47.521814 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Acer\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\Acer\\OneDrive\\Desktop\\Job\\Job\\dbt-bigquery\\ProductionBacklogAnalysis\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:46:47.523825 [info ] [MainThread]: dbt version: 1.5.1
+[0m18:46:47.524825 [info ] [MainThread]: python version: 3.10.11
+[0m18:46:47.525825 [info ] [MainThread]: python path: C:\Users\Acer\OneDrive\Desktop\Job\job\dbt-bigquery\dbt-env\Scripts\python.exe
+[0m18:46:47.528329 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m18:46:47.530328 [info ] [MainThread]: Using profiles.yml file at C:\Users\Acer\.dbt\profiles.yml
+[0m18:46:47.532326 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Acer\OneDrive\Desktop\Job\Job\dbt-bigquery\ProductionBacklogAnalysis\dbt_project.yml
+[0m18:46:47.533327 [info ] [MainThread]: Configuration:
+[0m18:46:47.675445 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:46:47.719271 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:46:47.721482 [info ] [MainThread]: Required dependencies:
+[0m18:46:47.722931 [debug] [MainThread]: Executing "git --help"
+[0m18:46:47.815828 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:46:47.816839 [debug] [MainThread]: STDERR: "b''"
+[0m18:46:47.816839 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:46:47.820592 [info ] [MainThread]: Connection:
+[0m18:46:47.823767 [info ] [MainThread]:   host: localhost
+[0m18:46:47.825787 [info ] [MainThread]:   port: 5435
+[0m18:46:47.829791 [info ] [MainThread]:   user: postgres
+[0m18:46:47.831797 [info ] [MainThread]:   database: instagrid
+[0m18:46:47.834790 [info ] [MainThread]:   schema: public
+[0m18:46:47.836891 [info ] [MainThread]:   search_path: None
+[0m18:46:47.844181 [info ] [MainThread]:   keepalives_idle: 0
+[0m18:46:47.850655 [info ] [MainThread]:   sslmode: None
+[0m18:46:47.853811 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m18:46:47.858812 [debug] [MainThread]: Using postgres connection "debug"
+[0m18:46:47.861817 [debug] [MainThread]: On debug: select 1 as id
+[0m18:46:47.862813 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:46:48.020028 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m18:46:48.023038 [debug] [MainThread]: On debug: Close
+[0m18:46:48.024038 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:46:48.026038 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:46:48.029171 [debug] [MainThread]: Command `dbt debug` succeeded at 18:46:48.029171 after 0.56 seconds
+[0m18:46:48.030211 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:46:48.032184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEFE5F4A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEFE9768C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CF00B649D0>]}
+[0m18:46:48.033190 [debug] [MainThread]: Flushing usage events
+[0m18:46:59.792443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA6F3F4A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71757FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71757E80>]}
+
+
+============================== 18:46:59.797453 | b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5 ==============================
+[0m18:46:59.797453 [info ] [MainThread]: Running with dbt=1.5.1
+[0m18:46:59.800444 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Acer\\OneDrive\\Desktop\\Job\\Job\\dbt-bigquery\\ProductionBacklogAnalysis\\logs', 'profiles_dir': 'C:\\Users\\Acer\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m18:46:59.927050 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71757EE0>]}
+[0m18:46:59.943584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71865FC0>]}
+[0m18:46:59.959596 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m18:47:00.073121 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:47:00.074125 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:47:00.094793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71C19330>]}
+[0m18:47:00.121386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA7195E290>]}
+[0m18:47:00.123400 [info ] [MainThread]: Found 6 models, 0 tests, 0 snapshots, 0 analyses, 307 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m18:47:00.124399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA7195E410>]}
+[0m18:47:00.128528 [info ] [MainThread]: 
+[0m18:47:00.131542 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m18:47:00.151948 [debug] [ThreadPool]: Acquiring new postgres connection 'list_instagrid'
+[0m18:47:00.184343 [debug] [ThreadPool]: Using postgres connection "list_instagrid"
+[0m18:47:00.185333 [debug] [ThreadPool]: On list_instagrid: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "connection_name": "list_instagrid"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m18:47:00.187439 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:47:00.341013 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.0 seconds
+[0m18:47:00.347065 [debug] [ThreadPool]: On list_instagrid: Close
+[0m18:47:00.363836 [debug] [ThreadPool]: Acquiring new postgres connection 'list_instagrid_public'
+[0m18:47:00.374374 [debug] [ThreadPool]: Using postgres connection "list_instagrid_public"
+[0m18:47:00.376360 [debug] [ThreadPool]: On list_instagrid_public: BEGIN
+[0m18:47:00.377358 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:47:00.440647 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m18:47:00.440647 [debug] [ThreadPool]: Using postgres connection "list_instagrid_public"
+[0m18:47:00.441648 [debug] [ThreadPool]: On list_instagrid_public: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "connection_name": "list_instagrid_public"} */
+select
+      'instagrid' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'instagrid' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+[0m18:47:00.480522 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.0 seconds
+[0m18:47:00.482537 [debug] [ThreadPool]: On list_instagrid_public: ROLLBACK
+[0m18:47:00.484521 [debug] [ThreadPool]: On list_instagrid_public: Close
+[0m18:47:00.493941 [debug] [MainThread]: Using postgres connection "master"
+[0m18:47:00.494946 [debug] [MainThread]: On master: BEGIN
+[0m18:47:00.495940 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:47:00.539471 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m18:47:00.540475 [debug] [MainThread]: Using postgres connection "master"
+[0m18:47:00.541469 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m18:47:00.600701 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m18:47:00.602704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71C65900>]}
+[0m18:47:00.603713 [debug] [MainThread]: On master: ROLLBACK
+[0m18:47:00.605707 [debug] [MainThread]: Using postgres connection "master"
+[0m18:47:00.605707 [debug] [MainThread]: On master: BEGIN
+[0m18:47:00.607705 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m18:47:00.607705 [debug] [MainThread]: On master: COMMIT
+[0m18:47:00.608705 [debug] [MainThread]: Using postgres connection "master"
+[0m18:47:00.609705 [debug] [MainThread]: On master: COMMIT
+[0m18:47:00.610950 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m18:47:00.611965 [debug] [MainThread]: On master: Close
+[0m18:47:00.613975 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m18:47:00.616428 [info ] [MainThread]: 
+[0m18:47:00.672733 [debug] [Thread-1 (]: Began running node model.instagrid.dim_date
+[0m18:47:00.674075 [debug] [Thread-2 (]: Began running node model.instagrid.sg_manufactured_units
+[0m18:47:00.677535 [info ] [Thread-1 (]: 1 of 6 START sql table model public.dim_date ................................... [RUN]
+[0m18:47:00.679526 [info ] [Thread-2 (]: 2 of 6 START sql table model public.sg_manufactured_units ...................... [RUN]
+[0m18:47:00.681525 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.instagrid.dim_date'
+[0m18:47:00.683537 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.instagrid.sg_manufactured_units'
+[0m18:47:00.684529 [debug] [Thread-1 (]: Began compiling node model.instagrid.dim_date
+[0m18:47:00.685527 [debug] [Thread-2 (]: Began compiling node model.instagrid.sg_manufactured_units
+[0m18:47:00.693751 [debug] [Thread-1 (]: Writing injected SQL for node "model.instagrid.dim_date"
+[0m18:47:00.699946 [debug] [Thread-2 (]: Writing injected SQL for node "model.instagrid.sg_manufactured_units"
+[0m18:47:00.711171 [debug] [Thread-2 (]: Timing info for model.instagrid.sg_manufactured_units (compile): 18:47:00.695931 => 18:47:00.710172
+[0m18:47:00.714224 [debug] [Thread-1 (]: Timing info for model.instagrid.dim_date (compile): 18:47:00.690588 => 18:47:00.712171
+[0m18:47:00.715254 [debug] [Thread-2 (]: Began executing node model.instagrid.sg_manufactured_units
+[0m18:47:00.717208 [debug] [Thread-1 (]: Began executing node model.instagrid.dim_date
+[0m18:47:00.802394 [debug] [Thread-1 (]: Writing runtime sql for node "model.instagrid.dim_date"
+[0m18:47:00.803367 [debug] [Thread-2 (]: Writing runtime sql for node "model.instagrid.sg_manufactured_units"
+[0m18:47:00.806060 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_date"
+[0m18:47:00.807067 [debug] [Thread-1 (]: On model.instagrid.dim_date: BEGIN
+[0m18:47:00.808057 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:47:00.809060 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_manufactured_units"
+[0m18:47:00.811526 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: BEGIN
+[0m18:47:00.812540 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:47:00.868209 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m18:47:00.870194 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_date"
+[0m18:47:00.871206 [debug] [Thread-1 (]: On model.instagrid.dim_date: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_date"} */
+
+  
+    
+
+  create  table "instagrid"."public"."dim_date__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with base as
+(
+  select
+    *
+  from
+generate_series('2021-12-31', '2022-12-31', INTERVAL '1 day') as d
+
+)
+
+
+select cast(d as date) as dimdate from base
+  );
+  
+[0m18:47:00.905787 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m18:47:00.908077 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_manufactured_units"
+[0m18:47:00.909074 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_manufactured_units"} */
+
+  
+    
+
+  create  table "instagrid"."public"."sg_manufactured_units__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with source as
+(
+
+    select * from  "instagrid"."public"."manufactured_units"
+)
+
+select 
+cast(date as Date) as date,
+
+product1,
+product2
+from source
+  );
+  
+[0m18:47:01.314040 [debug] [Thread-2 (]: SQL status: SELECT 334 in 0.0 seconds
+[0m18:47:01.323039 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_manufactured_units"
+[0m18:47:01.324045 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_manufactured_units"} */
+alter table "instagrid"."public"."sg_manufactured_units" rename to "sg_manufactured_units__dbt_backup"
+[0m18:47:01.335185 [debug] [Thread-1 (]: SQL status: SELECT 366 in 0.0 seconds
+[0m18:47:01.339429 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_date"
+[0m18:47:01.340427 [debug] [Thread-1 (]: On model.instagrid.dim_date: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_date"} */
+alter table "instagrid"."public"."dim_date" rename to "dim_date__dbt_backup"
+[0m18:47:01.359112 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m18:47:01.365098 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_date"
+[0m18:47:01.366111 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m18:47:01.367120 [debug] [Thread-1 (]: On model.instagrid.dim_date: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_date"} */
+alter table "instagrid"."public"."dim_date__dbt_tmp" rename to "dim_date"
+[0m18:47:01.373098 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_manufactured_units"
+[0m18:47:01.375446 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_manufactured_units"} */
+alter table "instagrid"."public"."sg_manufactured_units__dbt_tmp" rename to "sg_manufactured_units"
+[0m18:47:01.378463 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m18:47:01.407377 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m18:47:01.422685 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: COMMIT
+[0m18:47:01.427684 [debug] [Thread-1 (]: On model.instagrid.dim_date: COMMIT
+[0m18:47:01.429946 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_manufactured_units"
+[0m18:47:01.430947 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_date"
+[0m18:47:01.432944 [debug] [Thread-1 (]: On model.instagrid.dim_date: COMMIT
+[0m18:47:01.431944 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: COMMIT
+[0m18:47:01.445136 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m18:47:01.446138 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m18:47:01.455592 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_manufactured_units"
+[0m18:47:01.460594 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_date"
+[0m18:47:01.462595 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_manufactured_units"} */
+drop table if exists "instagrid"."public"."sg_manufactured_units__dbt_backup" cascade
+[0m18:47:01.463591 [debug] [Thread-1 (]: On model.instagrid.dim_date: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_date"} */
+drop table if exists "instagrid"."public"."dim_date__dbt_backup" cascade
+[0m18:47:01.503309 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m18:47:01.505311 [debug] [Thread-1 (]: Timing info for model.instagrid.dim_date (execute): 18:47:00.763336 => 18:47:01.505311
+[0m18:47:01.506315 [debug] [Thread-1 (]: On model.instagrid.dim_date: Close
+[0m18:47:01.508317 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71D1A8F0>]}
+[0m18:47:01.509497 [info ] [Thread-1 (]: 1 of 6 OK created sql table model public.dim_date .............................. [[32mSELECT 366[0m in 0.83s]
+[0m18:47:01.512514 [debug] [Thread-1 (]: Finished running node model.instagrid.dim_date
+[0m18:47:01.513515 [debug] [Thread-1 (]: Began running node model.instagrid.sg_production_plan
+[0m18:47:01.514529 [info ] [Thread-1 (]: 3 of 6 START sql table model public.sg_production_plan ......................... [RUN]
+[0m18:47:01.516644 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.instagrid.dim_date, now model.instagrid.sg_production_plan)
+[0m18:47:01.518664 [debug] [Thread-1 (]: Began compiling node model.instagrid.sg_production_plan
+[0m18:47:01.523660 [debug] [Thread-1 (]: Writing injected SQL for node "model.instagrid.sg_production_plan"
+[0m18:47:01.534148 [debug] [Thread-1 (]: Timing info for model.instagrid.sg_production_plan (compile): 18:47:01.519662 => 18:47:01.533145
+[0m18:47:01.536143 [debug] [Thread-1 (]: Began executing node model.instagrid.sg_production_plan
+[0m18:47:01.547147 [debug] [Thread-1 (]: Writing runtime sql for node "model.instagrid.sg_production_plan"
+[0m18:47:01.552169 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.sg_production_plan"
+[0m18:47:01.554416 [debug] [Thread-1 (]: On model.instagrid.sg_production_plan: BEGIN
+[0m18:47:01.557927 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:47:01.564722 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m18:47:01.568738 [debug] [Thread-2 (]: Timing info for model.instagrid.sg_manufactured_units (execute): 18:47:00.718211 => 18:47:01.568738
+[0m18:47:01.570736 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: Close
+[0m18:47:01.572968 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71CC1E10>]}
+[0m18:47:01.574975 [info ] [Thread-2 (]: 2 of 6 OK created sql table model public.sg_manufactured_units ................. [[32mSELECT 334[0m in 0.89s]
+[0m18:47:01.579238 [debug] [Thread-2 (]: Finished running node model.instagrid.sg_manufactured_units
+[0m18:47:01.581243 [debug] [Thread-2 (]: Began running node model.instagrid.dim_manufactured_units
+[0m18:47:01.583233 [info ] [Thread-2 (]: 4 of 6 START sql table model public.dim_manufactured_units ..................... [RUN]
+[0m18:47:01.585236 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.instagrid.sg_manufactured_units, now model.instagrid.dim_manufactured_units)
+[0m18:47:01.586695 [debug] [Thread-2 (]: Began compiling node model.instagrid.dim_manufactured_units
+[0m18:47:01.592900 [debug] [Thread-2 (]: Writing injected SQL for node "model.instagrid.dim_manufactured_units"
+[0m18:47:01.606895 [debug] [Thread-2 (]: Timing info for model.instagrid.dim_manufactured_units (compile): 18:47:01.587711 => 18:47:01.605860
+[0m18:47:01.608234 [debug] [Thread-2 (]: Began executing node model.instagrid.dim_manufactured_units
+[0m18:47:01.620262 [debug] [Thread-2 (]: Writing runtime sql for node "model.instagrid.dim_manufactured_units"
+[0m18:47:01.625264 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.dim_manufactured_units"
+[0m18:47:01.626265 [debug] [Thread-2 (]: On model.instagrid.dim_manufactured_units: BEGIN
+[0m18:47:01.628261 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m18:47:01.680740 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m18:47:01.682743 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.sg_production_plan"
+[0m18:47:01.683744 [debug] [Thread-1 (]: On model.instagrid.sg_production_plan: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_production_plan"} */
+
+  
+    
+
+  create  table "instagrid"."public"."sg_production_plan__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with source as
+(
+
+    select * from  "instagrid"."public"."production_plan"
+)
+
+select 
+week,
+cast(lower(replace(pn,' ',''))  as varchar(50)) as pn,
+cast(plan as integer) as productionplan
+
+from source
+  );
+  
+[0m18:47:01.756864 [debug] [Thread-1 (]: SQL status: SELECT 104 in 0.0 seconds
+[0m18:47:01.766825 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.sg_production_plan"
+[0m18:47:01.768826 [debug] [Thread-1 (]: On model.instagrid.sg_production_plan: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_production_plan"} */
+alter table "instagrid"."public"."sg_production_plan" rename to "sg_production_plan__dbt_backup"
+[0m18:47:01.770826 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m18:47:01.777433 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.sg_production_plan"
+[0m18:47:01.778431 [debug] [Thread-1 (]: On model.instagrid.sg_production_plan: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_production_plan"} */
+alter table "instagrid"."public"."sg_production_plan__dbt_tmp" rename to "sg_production_plan"
+[0m18:47:01.780432 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m18:47:01.784431 [debug] [Thread-1 (]: On model.instagrid.sg_production_plan: COMMIT
+[0m18:47:01.786718 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.sg_production_plan"
+[0m18:47:01.787717 [debug] [Thread-1 (]: On model.instagrid.sg_production_plan: COMMIT
+[0m18:47:01.807847 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m18:47:01.808857 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.dim_manufactured_units"
+[0m18:47:01.809856 [debug] [Thread-2 (]: On model.instagrid.dim_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_manufactured_units"} */
+
+  
+    
+
+  create  table "instagrid"."public"."dim_manufactured_units__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with final as
+(
+
+select
+date,
+concat('W',extract(week from date)) as year_week,
+TO_CHAR(date, 'MON')  as month_name,
+concat('product1-',product1) as product_type
+ from
+"instagrid"."public"."sg_manufactured_units" 
+
+union all 
+select
+date,
+concat('W',extract(week from date)) as year_week,
+TO_CHAR(date, 'MON')  as month_name,
+concat('product2-',product2) as product_type
+ from
+"instagrid"."public"."sg_manufactured_units" 
+),
+
+base as
+(
+select date,year_week,month_name,
+SPLIT_PART(product_type,'-',1) as product_type,
+cast(SPLIT_PART(product_type,'-',2) as integer) as plan
+
+from final
+)
+
+select distinct date as date, year_week,product_type,plan
+from base
+  );
+  
+[0m18:47:01.813203 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m18:47:01.819201 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.sg_production_plan"
+[0m18:47:01.820198 [debug] [Thread-1 (]: On model.instagrid.sg_production_plan: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_production_plan"} */
+drop table if exists "instagrid"."public"."sg_production_plan__dbt_backup" cascade
+[0m18:47:01.861276 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m18:47:01.862280 [debug] [Thread-2 (]: SQL status: SELECT 668 in 0.0 seconds
+[0m18:47:01.864277 [debug] [Thread-1 (]: Timing info for model.instagrid.sg_production_plan (execute): 18:47:01.537144 => 18:47:01.864277
+[0m18:47:01.870045 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.dim_manufactured_units"
+[0m18:47:01.872044 [debug] [Thread-1 (]: On model.instagrid.sg_production_plan: Close
+[0m18:47:01.873045 [debug] [Thread-2 (]: On model.instagrid.dim_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_manufactured_units"} */
+alter table "instagrid"."public"."dim_manufactured_units" rename to "dim_manufactured_units__dbt_backup"
+[0m18:47:01.875047 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71C68AC0>]}
+[0m18:47:01.877046 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m18:47:01.878046 [info ] [Thread-1 (]: 3 of 6 OK created sql table model public.sg_production_plan .................... [[32mSELECT 104[0m in 0.36s]
+[0m18:47:01.885969 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.dim_manufactured_units"
+[0m18:47:01.887141 [debug] [Thread-1 (]: Finished running node model.instagrid.sg_production_plan
+[0m18:47:01.888503 [debug] [Thread-2 (]: On model.instagrid.dim_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_manufactured_units"} */
+alter table "instagrid"."public"."dim_manufactured_units__dbt_tmp" rename to "dim_manufactured_units"
+[0m18:47:01.890949 [debug] [Thread-1 (]: Began running node model.instagrid.production_final
+[0m18:47:01.893095 [info ] [Thread-1 (]: 5 of 6 START sql table model public.production_final ........................... [RUN]
+[0m18:47:01.898676 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.instagrid.sg_production_plan, now model.instagrid.production_final)
+[0m18:47:01.899675 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m18:47:01.900671 [debug] [Thread-1 (]: Began compiling node model.instagrid.production_final
+[0m18:47:01.908673 [debug] [Thread-2 (]: On model.instagrid.dim_manufactured_units: COMMIT
+[0m18:47:01.914841 [debug] [Thread-1 (]: Writing injected SQL for node "model.instagrid.production_final"
+[0m18:47:01.915840 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.dim_manufactured_units"
+[0m18:47:01.918240 [debug] [Thread-2 (]: On model.instagrid.dim_manufactured_units: COMMIT
+[0m18:47:01.924242 [debug] [Thread-1 (]: Timing info for model.instagrid.production_final (compile): 18:47:01.909672 => 18:47:01.923239
+[0m18:47:01.925241 [debug] [Thread-1 (]: Began executing node model.instagrid.production_final
+[0m18:47:01.938051 [debug] [Thread-1 (]: Writing runtime sql for node "model.instagrid.production_final"
+[0m18:47:01.940030 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m18:47:01.946484 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.dim_manufactured_units"
+[0m18:47:01.948486 [debug] [Thread-2 (]: On model.instagrid.dim_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_manufactured_units"} */
+drop table if exists "instagrid"."public"."dim_manufactured_units__dbt_backup" cascade
+[0m18:47:01.949487 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.production_final"
+[0m18:47:01.951495 [debug] [Thread-1 (]: On model.instagrid.production_final: BEGIN
+[0m18:47:01.958667 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:47:01.959633 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m18:47:01.963635 [debug] [Thread-2 (]: Timing info for model.instagrid.dim_manufactured_units (execute): 18:47:01.610246 => 18:47:01.962633
+[0m18:47:01.965636 [debug] [Thread-2 (]: On model.instagrid.dim_manufactured_units: Close
+[0m18:47:01.967994 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71D71360>]}
+[0m18:47:01.970235 [info ] [Thread-2 (]: 4 of 6 OK created sql table model public.dim_manufactured_units ................ [[32mSELECT 668[0m in 0.38s]
+[0m18:47:01.974435 [debug] [Thread-2 (]: Finished running node model.instagrid.dim_manufactured_units
+[0m18:47:01.975446 [debug] [Thread-2 (]: Began running node model.instagrid.manufactured_final
+[0m18:47:01.977938 [info ] [Thread-2 (]: 6 of 6 START sql table model public.manufactured_final ......................... [RUN]
+[0m18:47:01.980944 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.instagrid.dim_manufactured_units, now model.instagrid.manufactured_final)
+[0m18:47:01.981940 [debug] [Thread-2 (]: Began compiling node model.instagrid.manufactured_final
+[0m18:47:01.991424 [debug] [Thread-2 (]: Writing injected SQL for node "model.instagrid.manufactured_final"
+[0m18:47:01.994425 [debug] [Thread-2 (]: Timing info for model.instagrid.manufactured_final (compile): 18:47:01.982939 => 18:47:01.993424
+[0m18:47:01.996455 [debug] [Thread-2 (]: Began executing node model.instagrid.manufactured_final
+[0m18:47:02.008781 [debug] [Thread-2 (]: Writing runtime sql for node "model.instagrid.manufactured_final"
+[0m18:47:02.011782 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.manufactured_final"
+[0m18:47:02.012779 [debug] [Thread-2 (]: On model.instagrid.manufactured_final: BEGIN
+[0m18:47:02.026282 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m18:47:02.091078 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m18:47:02.092076 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.production_final"
+[0m18:47:02.094078 [debug] [Thread-1 (]: On model.instagrid.production_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.production_final"} */
+
+  
+    
+
+  create  table "instagrid"."public"."production_final__dbt_tmp"
+  
+  
+    as
+  
+  (
+    select * from  "instagrid"."public"."sg_production_plan"
+  );
+  
+[0m18:47:02.121399 [debug] [Thread-1 (]: SQL status: SELECT 104 in 0.0 seconds
+[0m18:47:02.127410 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.production_final"
+[0m18:47:02.128410 [debug] [Thread-1 (]: On model.instagrid.production_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.production_final"} */
+alter table "instagrid"."public"."production_final" rename to "production_final__dbt_backup"
+[0m18:47:02.129923 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m18:47:02.136297 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.production_final"
+[0m18:47:02.137309 [debug] [Thread-1 (]: On model.instagrid.production_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.production_final"} */
+alter table "instagrid"."public"."production_final__dbt_tmp" rename to "production_final"
+[0m18:47:02.138309 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m18:47:02.139687 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.manufactured_final"
+[0m18:47:02.140989 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m18:47:02.141999 [debug] [Thread-2 (]: On model.instagrid.manufactured_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.manufactured_final"} */
+
+  
+    
+
+  create  table "instagrid"."public"."manufactured_final__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with base as
+(
+select dimdate,product_type,plan from 
+"instagrid"."public"."dim_date" as d
+left join "instagrid"."public"."dim_manufactured_units"  as m 
+on d.dimdate=m.date
+),
+
+first1 as
+(
+
+select dimdate, concat('W',extract('week' from dimdate)) as year_week,product_type,coalesce(plan,0) as manufacturedplan
+ from base
+ where product_type is not null
+),
+
+nullvalues as
+(
+    select dimdate, concat('W',extract('week' from dimdate)) as year_week,product_type,coalesce(plan,0) as manufacturedplan
+ from base
+ where product_type is null
+),
+
+products as
+(
+select distinct product_type from first1
+where product_type is not null
+),
+
+decembervalues as
+(
+select dimdate,year_week,products.product_type as product_type , manufacturedplan from products 
+cross join nullvalues 
+),
+
+final as
+(
+select * from first1
+union all
+select * from  decembervalues
+)
+
+select * from final
+  );
+  
+[0m18:47:02.146094 [debug] [Thread-1 (]: On model.instagrid.production_final: COMMIT
+[0m18:47:02.148578 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.production_final"
+[0m18:47:02.149591 [debug] [Thread-1 (]: On model.instagrid.production_final: COMMIT
+[0m18:47:02.157852 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m18:47:02.161881 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.production_final"
+[0m18:47:02.162862 [debug] [Thread-1 (]: On model.instagrid.production_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.production_final"} */
+drop table if exists "instagrid"."public"."production_final__dbt_backup" cascade
+[0m18:47:02.171856 [debug] [Thread-2 (]: SQL status: SELECT 732 in 0.0 seconds
+[0m18:47:02.177371 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.manufactured_final"
+[0m18:47:02.178375 [debug] [Thread-2 (]: On model.instagrid.manufactured_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.manufactured_final"} */
+alter table "instagrid"."public"."manufactured_final" rename to "manufactured_final__dbt_backup"
+[0m18:47:02.179376 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m18:47:02.185373 [debug] [Thread-1 (]: Timing info for model.instagrid.production_final (execute): 18:47:01.926243 => 18:47:02.184373
+[0m18:47:02.186372 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m18:47:02.187373 [debug] [Thread-1 (]: On model.instagrid.production_final: Close
+[0m18:47:02.192840 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.manufactured_final"
+[0m18:47:02.194844 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71DA10F0>]}
+[0m18:47:02.195842 [debug] [Thread-2 (]: On model.instagrid.manufactured_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.manufactured_final"} */
+alter table "instagrid"."public"."manufactured_final__dbt_tmp" rename to "manufactured_final"
+[0m18:47:02.197846 [info ] [Thread-1 (]: 5 of 6 OK created sql table model public.production_final ...................... [[32mSELECT 104[0m in 0.30s]
+[0m18:47:02.199848 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m18:47:02.200844 [debug] [Thread-1 (]: Finished running node model.instagrid.production_final
+[0m18:47:02.206121 [debug] [Thread-2 (]: On model.instagrid.manufactured_final: COMMIT
+[0m18:47:02.208133 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.manufactured_final"
+[0m18:47:02.209136 [debug] [Thread-2 (]: On model.instagrid.manufactured_final: COMMIT
+[0m18:47:02.212169 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m18:47:02.218161 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.manufactured_final"
+[0m18:47:02.226632 [debug] [Thread-2 (]: On model.instagrid.manufactured_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.manufactured_final"} */
+drop table if exists "instagrid"."public"."manufactured_final__dbt_backup" cascade
+[0m18:47:02.236841 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m18:47:02.241321 [debug] [Thread-2 (]: Timing info for model.instagrid.manufactured_final (execute): 18:47:01.997769 => 18:47:02.240313
+[0m18:47:02.242438 [debug] [Thread-2 (]: On model.instagrid.manufactured_final: Close
+[0m18:47:02.244456 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b5c71d00-8d4a-473f-97ed-3f82eb9a3ee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71D1A8F0>]}
+[0m18:47:02.246456 [info ] [Thread-2 (]: 6 of 6 OK created sql table model public.manufactured_final .................... [[32mSELECT 732[0m in 0.26s]
+[0m18:47:02.248552 [debug] [Thread-2 (]: Finished running node model.instagrid.manufactured_final
+[0m18:47:02.251569 [debug] [MainThread]: Using postgres connection "master"
+[0m18:47:02.252568 [debug] [MainThread]: On master: BEGIN
+[0m18:47:02.254567 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:47:02.336354 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m18:47:02.337604 [debug] [MainThread]: On master: COMMIT
+[0m18:47:02.338770 [debug] [MainThread]: Using postgres connection "master"
+[0m18:47:02.339783 [debug] [MainThread]: On master: COMMIT
+[0m18:47:02.340781 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m18:47:02.341781 [debug] [MainThread]: On master: Close
+[0m18:47:02.342786 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:47:02.343783 [debug] [MainThread]: Connection 'list_instagrid' was properly closed.
+[0m18:47:02.345202 [debug] [MainThread]: Connection 'list_instagrid_public' was properly closed.
+[0m18:47:02.346211 [debug] [MainThread]: Connection 'model.instagrid.production_final' was properly closed.
+[0m18:47:02.347214 [debug] [MainThread]: Connection 'model.instagrid.manufactured_final' was properly closed.
+[0m18:47:02.348497 [info ] [MainThread]: 
+[0m18:47:02.350004 [info ] [MainThread]: Finished running 6 table models in 0 hours 0 minutes and 2.22 seconds (2.22s).
+[0m18:47:02.354404 [debug] [MainThread]: Command end result
+[0m18:47:02.368926 [info ] [MainThread]: 
+[0m18:47:02.370926 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:47:02.372927 [info ] [MainThread]: 
+[0m18:47:02.374932 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+[0m18:47:02.386620 [debug] [MainThread]: Command `dbt run` succeeded at 18:47:02.385635 after 2.62 seconds
+[0m18:47:02.388636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA6F3F4A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA71865FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AA7195DD20>]}
+[0m18:47:02.390620 [debug] [MainThread]: Flushing usage events
+[0m15:23:54.427303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001972D0F4A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001972F457E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001972F457D30>]}
+
+
+============================== 15:23:54.435309 | d458adaf-8db8-4daa-aaff-7a031c02d9af ==============================
+[0m15:23:54.435309 [info ] [MainThread]: Running with dbt=1.5.1
+[0m15:23:54.437307 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\Acer\\OneDrive\\Desktop\\Job\\Job\\dbt-bigquery\\ProductionBacklogAnalysis\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Acer\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:23:54.439767 [info ] [MainThread]: dbt version: 1.5.1
+[0m15:23:54.442282 [info ] [MainThread]: python version: 3.10.11
+[0m15:23:54.443297 [info ] [MainThread]: python path: C:\Users\Acer\OneDrive\Desktop\Job\job\dbt-bigquery\dbt-env\Scripts\python.exe
+[0m15:23:54.445296 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m15:23:54.446294 [info ] [MainThread]: Using profiles.yml file at C:\Users\Acer\.dbt\profiles.yml
+[0m15:23:54.448292 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Acer\OneDrive\Desktop\Job\Job\dbt-bigquery\ProductionBacklogAnalysis\dbt_project.yml
+[0m15:23:54.449297 [info ] [MainThread]: Configuration:
+[0m15:23:54.538231 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:23:54.580106 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:23:54.585692 [info ] [MainThread]: Required dependencies:
+[0m15:23:54.589157 [debug] [MainThread]: Executing "git --help"
+[0m15:23:54.673400 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:23:54.675694 [debug] [MainThread]: STDERR: "b''"
+[0m15:23:54.676683 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:23:54.677682 [info ] [MainThread]: Connection:
+[0m15:23:54.679694 [info ] [MainThread]:   host: localhost
+[0m15:23:54.681694 [info ] [MainThread]:   port: 5435
+[0m15:23:54.682694 [info ] [MainThread]:   user: postgres
+[0m15:23:54.685699 [info ] [MainThread]:   database: instagrid
+[0m15:23:54.687695 [info ] [MainThread]:   schema: public
+[0m15:23:54.690693 [info ] [MainThread]:   search_path: None
+[0m15:23:54.696331 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:23:54.706327 [info ] [MainThread]:   sslmode: None
+[0m15:23:54.709327 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:23:54.710331 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:23:54.711326 [debug] [MainThread]: On debug: select 1 as id
+[0m15:23:54.712326 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:23:54.864399 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:23:54.866396 [debug] [MainThread]: On debug: Close
+[0m15:23:54.867396 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:23:54.873718 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:23:54.877794 [debug] [MainThread]: Command `dbt debug` succeeded at 15:23:54.876799 after 0.49 seconds
+[0m15:23:54.878802 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:23:54.879804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001972D0F4A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001972D793DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001972F565C30>]}
+[0m15:23:54.880808 [debug] [MainThread]: Flushing usage events
+[0m19:28:46.255533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F0FF4A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F3367FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F3367E80>]}
+
+
+============================== 19:28:46.262806 | 80b4e259-97f2-411b-8d3f-b2dec98367fa ==============================
+[0m19:28:46.262806 [info ] [MainThread]: Running with dbt=1.5.1
+[0m19:28:46.264786 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Acer\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Acer\\OneDrive\\Desktop\\Job\\Job\\dbt-bigquery\\ProductionBacklogAnalysis\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:28:46.443021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F3367F40>]}
+[0m19:28:46.475107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F3485DB0>]}
+[0m19:28:46.498725 [debug] [MainThread]: checksum: 51f6b581eba8f8101bc020bf9faf8f96af641e2da86d581f66e2bdf0ff384b1c, vars: {}, profile: , target: , version: 1.5.1
+[0m19:28:46.645665 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:28:46.646665 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:28:46.662411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F391D930>]}
+[0m19:28:46.679745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F38F2920>]}
+[0m19:28:46.681756 [info ] [MainThread]: Found 7 models, 0 tests, 0 snapshots, 0 analyses, 307 macros, 0 operations, 0 seed files, 2 sources, 0 exposures, 0 metrics, 0 groups
+[0m19:28:46.683758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F38F2AD0>]}
+[0m19:28:46.688275 [info ] [MainThread]: 
+[0m19:28:46.692002 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m19:28:46.707918 [debug] [ThreadPool]: Acquiring new postgres connection 'list_instagrid'
+[0m19:28:46.742832 [debug] [ThreadPool]: Using postgres connection "list_instagrid"
+[0m19:28:46.743834 [debug] [ThreadPool]: On list_instagrid: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "connection_name": "list_instagrid"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m19:28:46.744837 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:28:47.008023 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.0 seconds
+[0m19:28:47.012080 [debug] [ThreadPool]: On list_instagrid: Close
+[0m19:28:47.026855 [debug] [ThreadPool]: Acquiring new postgres connection 'list_instagrid_public'
+[0m19:28:47.041825 [debug] [ThreadPool]: Using postgres connection "list_instagrid_public"
+[0m19:28:47.042824 [debug] [ThreadPool]: On list_instagrid_public: BEGIN
+[0m19:28:47.043823 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:28:47.131502 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m19:28:47.132503 [debug] [ThreadPool]: Using postgres connection "list_instagrid_public"
+[0m19:28:47.133506 [debug] [ThreadPool]: On list_instagrid_public: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "connection_name": "list_instagrid_public"} */
+select
+      'instagrid' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'instagrid' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+[0m19:28:47.179952 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.0 seconds
+[0m19:28:47.183412 [debug] [ThreadPool]: On list_instagrid_public: ROLLBACK
+[0m19:28:47.185909 [debug] [ThreadPool]: On list_instagrid_public: Close
+[0m19:28:47.200862 [debug] [MainThread]: Using postgres connection "master"
+[0m19:28:47.201862 [debug] [MainThread]: On master: BEGIN
+[0m19:28:47.202867 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:28:47.260426 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m19:28:47.261427 [debug] [MainThread]: Using postgres connection "master"
+[0m19:28:47.262426 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m19:28:47.306465 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m19:28:47.310048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F395E170>]}
+[0m19:28:47.311501 [debug] [MainThread]: On master: ROLLBACK
+[0m19:28:47.313029 [debug] [MainThread]: Using postgres connection "master"
+[0m19:28:47.314023 [debug] [MainThread]: On master: BEGIN
+[0m19:28:47.315029 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m19:28:47.316514 [debug] [MainThread]: On master: COMMIT
+[0m19:28:47.318028 [debug] [MainThread]: Using postgres connection "master"
+[0m19:28:47.319552 [debug] [MainThread]: On master: COMMIT
+[0m19:28:47.321076 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m19:28:47.322991 [debug] [MainThread]: On master: Close
+[0m19:28:47.326386 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m19:28:47.331961 [info ] [MainThread]: 
+[0m19:28:47.348716 [debug] [Thread-1 (]: Began running node model.instagrid.dim_date
+[0m19:28:47.349773 [debug] [Thread-2 (]: Began running node model.instagrid.sg_manufactured_units
+[0m19:28:47.352796 [info ] [Thread-1 (]: 1 of 7 START sql table model public.dim_date ................................... [RUN]
+[0m19:28:47.358301 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.instagrid.dim_date'
+[0m19:28:47.356291 [info ] [Thread-2 (]: 2 of 7 START sql table model public.sg_manufactured_units ...................... [RUN]
+[0m19:28:47.359827 [debug] [Thread-1 (]: Began compiling node model.instagrid.dim_date
+[0m19:28:47.361705 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.instagrid.sg_manufactured_units'
+[0m19:28:47.369987 [debug] [Thread-2 (]: Began compiling node model.instagrid.sg_manufactured_units
+[0m19:28:47.365720 [debug] [Thread-1 (]: Writing injected SQL for node "model.instagrid.dim_date"
+[0m19:28:47.375824 [debug] [Thread-2 (]: Writing injected SQL for node "model.instagrid.sg_manufactured_units"
+[0m19:28:47.384773 [debug] [Thread-2 (]: Timing info for model.instagrid.sg_manufactured_units (compile): 19:28:47.370823 => 19:28:47.383771
+[0m19:28:47.386788 [debug] [Thread-2 (]: Began executing node model.instagrid.sg_manufactured_units
+[0m19:28:47.462995 [debug] [Thread-1 (]: Timing info for model.instagrid.dim_date (compile): 19:28:47.362714 => 19:28:47.462995
+[0m19:28:47.512003 [debug] [Thread-2 (]: Writing runtime sql for node "model.instagrid.sg_manufactured_units"
+[0m19:28:47.513004 [debug] [Thread-1 (]: Began executing node model.instagrid.dim_date
+[0m19:28:47.526201 [debug] [Thread-1 (]: Writing runtime sql for node "model.instagrid.dim_date"
+[0m19:28:47.528714 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_manufactured_units"
+[0m19:28:47.529723 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: BEGIN
+[0m19:28:47.532231 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_date"
+[0m19:28:47.535993 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m19:28:47.539070 [debug] [Thread-1 (]: On model.instagrid.dim_date: BEGIN
+[0m19:28:47.550914 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m19:28:47.648263 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m19:28:47.649871 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_date"
+[0m19:28:47.651413 [debug] [Thread-1 (]: On model.instagrid.dim_date: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_date"} */
+
+  
+    
+
+  create  table "instagrid"."public"."dim_date__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with base as
+(
+  select
+    *
+  from
+generate_series('2021-12-31', '2022-12-31', INTERVAL '1 day') as d
+
+)
+
+
+select cast(d as date) as dimdate from base
+  );
+  
+[0m19:28:47.670532 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m19:28:47.672568 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_manufactured_units"
+[0m19:28:47.674991 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_manufactured_units"} */
+
+  
+    
+
+  create  table "instagrid"."public"."sg_manufactured_units__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with source as
+(
+
+    select * from  "instagrid"."public"."manufactured_units"
+)
+
+select 
+cast(date as Date) as date,
+
+product1,
+product2
+from source
+  );
+  
+[0m19:28:47.716523 [debug] [Thread-2 (]: SQL status: SELECT 334 in 0.0 seconds
+[0m19:28:47.717203 [debug] [Thread-1 (]: SQL status: SELECT 366 in 0.0 seconds
+[0m19:28:47.731241 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_manufactured_units"
+[0m19:28:47.738776 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_date"
+[0m19:28:47.740903 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_manufactured_units"} */
+alter table "instagrid"."public"."sg_manufactured_units" rename to "sg_manufactured_units__dbt_backup"
+[0m19:28:47.741914 [debug] [Thread-1 (]: On model.instagrid.dim_date: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_date"} */
+alter table "instagrid"."public"."dim_date" rename to "dim_date__dbt_backup"
+[0m19:28:47.746229 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:47.746229 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:47.753867 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_date"
+[0m19:28:47.759975 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_manufactured_units"
+[0m19:28:47.762440 [debug] [Thread-1 (]: On model.instagrid.dim_date: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_date"} */
+alter table "instagrid"."public"."dim_date__dbt_tmp" rename to "dim_date"
+[0m19:28:47.763444 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_manufactured_units"} */
+alter table "instagrid"."public"."sg_manufactured_units__dbt_tmp" rename to "sg_manufactured_units"
+[0m19:28:47.766687 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:47.792207 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:47.811935 [debug] [Thread-1 (]: On model.instagrid.dim_date: COMMIT
+[0m19:28:47.816464 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: COMMIT
+[0m19:28:47.817978 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_date"
+[0m19:28:47.821569 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_manufactured_units"
+[0m19:28:47.822566 [debug] [Thread-1 (]: On model.instagrid.dim_date: COMMIT
+[0m19:28:47.823809 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: COMMIT
+[0m19:28:47.828334 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m19:28:47.828881 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m19:28:47.840026 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_date"
+[0m19:28:47.845634 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_manufactured_units"
+[0m19:28:47.851681 [debug] [Thread-1 (]: On model.instagrid.dim_date: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_date"} */
+drop table if exists "instagrid"."public"."dim_date__dbt_backup" cascade
+[0m19:28:47.853760 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_manufactured_units"} */
+drop table if exists "instagrid"."public"."sg_manufactured_units__dbt_backup" cascade
+[0m19:28:47.875524 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m19:28:47.876533 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m19:28:47.879565 [debug] [Thread-2 (]: Timing info for model.instagrid.sg_manufactured_units (execute): 19:28:47.388836 => 19:28:47.878043
+[0m19:28:47.884217 [debug] [Thread-1 (]: Timing info for model.instagrid.dim_date (execute): 19:28:47.515366 => 19:28:47.884217
+[0m19:28:47.886214 [debug] [Thread-2 (]: On model.instagrid.sg_manufactured_units: Close
+[0m19:28:47.887219 [debug] [Thread-1 (]: On model.instagrid.dim_date: Close
+[0m19:28:47.889740 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F3A073A0>]}
+[0m19:28:47.890986 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F3A18CA0>]}
+[0m19:28:47.893427 [info ] [Thread-2 (]: 2 of 7 OK created sql table model public.sg_manufactured_units ................. [[32mSELECT 334[0m in 0.53s]
+[0m19:28:47.894913 [info ] [Thread-1 (]: 1 of 7 OK created sql table model public.dim_date .............................. [[32mSELECT 366[0m in 0.53s]
+[0m19:28:47.897265 [debug] [Thread-2 (]: Finished running node model.instagrid.sg_manufactured_units
+[0m19:28:47.898800 [debug] [Thread-1 (]: Finished running node model.instagrid.dim_date
+[0m19:28:47.901137 [debug] [Thread-2 (]: Began running node model.instagrid.sg_production_plan
+[0m19:28:47.903560 [debug] [Thread-1 (]: Began running node model.instagrid.dim_manufactured_units
+[0m19:28:47.905739 [info ] [Thread-2 (]: 3 of 7 START sql table model public.sg_production_plan ......................... [RUN]
+[0m19:28:47.910741 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.instagrid.sg_manufactured_units, now model.instagrid.sg_production_plan)
+[0m19:28:47.911745 [debug] [Thread-2 (]: Began compiling node model.instagrid.sg_production_plan
+[0m19:28:47.907184 [info ] [Thread-1 (]: 4 of 7 START sql table model public.dim_manufactured_units ..................... [RUN]
+[0m19:28:47.917916 [debug] [Thread-2 (]: Writing injected SQL for node "model.instagrid.sg_production_plan"
+[0m19:28:47.919450 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.instagrid.dim_date, now model.instagrid.dim_manufactured_units)
+[0m19:28:47.922467 [debug] [Thread-1 (]: Began compiling node model.instagrid.dim_manufactured_units
+[0m19:28:47.929511 [debug] [Thread-1 (]: Writing injected SQL for node "model.instagrid.dim_manufactured_units"
+[0m19:28:47.931523 [debug] [Thread-2 (]: Timing info for model.instagrid.sg_production_plan (compile): 19:28:47.912739 => 19:28:47.930521
+[0m19:28:47.933525 [debug] [Thread-2 (]: Began executing node model.instagrid.sg_production_plan
+[0m19:28:47.936974 [debug] [Thread-1 (]: Timing info for model.instagrid.dim_manufactured_units (compile): 19:28:47.923465 => 19:28:47.935955
+[0m19:28:47.952116 [debug] [Thread-2 (]: Writing runtime sql for node "model.instagrid.sg_production_plan"
+[0m19:28:47.953114 [debug] [Thread-1 (]: Began executing node model.instagrid.dim_manufactured_units
+[0m19:28:47.964168 [debug] [Thread-1 (]: Writing runtime sql for node "model.instagrid.dim_manufactured_units"
+[0m19:28:47.970751 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_manufactured_units"
+[0m19:28:47.972768 [debug] [Thread-1 (]: On model.instagrid.dim_manufactured_units: BEGIN
+[0m19:28:47.974766 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:28:47.989958 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_production_plan"
+[0m19:28:47.992522 [debug] [Thread-2 (]: On model.instagrid.sg_production_plan: BEGIN
+[0m19:28:47.996522 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:28:48.094949 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m19:28:48.096953 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_production_plan"
+[0m19:28:48.101013 [debug] [Thread-2 (]: On model.instagrid.sg_production_plan: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_production_plan"} */
+
+  
+    
+
+  create  table "instagrid"."public"."sg_production_plan__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with source as
+(
+
+    select * from  "instagrid"."public"."production_plan"
+)
+
+select 
+week,
+cast(lower(replace(pn,' ',''))  as varchar(50)) as pn,
+cast(plan as integer) as productionplan
+
+from source
+  );
+  
+[0m19:28:48.105007 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m19:28:48.106005 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_manufactured_units"
+[0m19:28:48.107006 [debug] [Thread-1 (]: On model.instagrid.dim_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_manufactured_units"} */
+
+  
+    
+
+  create  table "instagrid"."public"."dim_manufactured_units__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with final as
+(
+
+select
+date,
+concat('W',extract(week from date)) as year_week,
+TO_CHAR(date, 'MON')  as month_name,
+concat('product1-',product1) as product_type
+ from
+"instagrid"."public"."sg_manufactured_units" 
+
+union all 
+select
+date,
+concat('W',extract(week from date)) as year_week,
+TO_CHAR(date, 'MON')  as month_name,
+concat('product2-',product2) as product_type
+ from
+"instagrid"."public"."sg_manufactured_units" 
+),
+
+base as
+(
+select date,year_week,month_name,
+SPLIT_PART(product_type,'-',1) as product_type,
+cast(SPLIT_PART(product_type,'-',2) as integer) as plan
+
+from final
+)
+
+select distinct date as date, year_week,product_type,plan
+from base
+  );
+  
+[0m19:28:48.135966 [debug] [Thread-2 (]: SQL status: SELECT 104 in 0.0 seconds
+[0m19:28:48.136960 [debug] [Thread-1 (]: SQL status: SELECT 668 in 0.0 seconds
+[0m19:28:48.142288 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_production_plan"
+[0m19:28:48.148865 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_manufactured_units"
+[0m19:28:48.150305 [debug] [Thread-2 (]: On model.instagrid.sg_production_plan: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_production_plan"} */
+alter table "instagrid"."public"."sg_production_plan" rename to "sg_production_plan__dbt_backup"
+[0m19:28:48.152313 [debug] [Thread-1 (]: On model.instagrid.dim_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_manufactured_units"} */
+alter table "instagrid"."public"."dim_manufactured_units" rename to "dim_manufactured_units__dbt_backup"
+[0m19:28:48.154314 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:48.155823 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:48.162896 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_production_plan"
+[0m19:28:48.170091 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_manufactured_units"
+[0m19:28:48.171113 [debug] [Thread-2 (]: On model.instagrid.sg_production_plan: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_production_plan"} */
+alter table "instagrid"."public"."sg_production_plan__dbt_tmp" rename to "sg_production_plan"
+[0m19:28:48.172441 [debug] [Thread-1 (]: On model.instagrid.dim_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_manufactured_units"} */
+alter table "instagrid"."public"."dim_manufactured_units__dbt_tmp" rename to "dim_manufactured_units"
+[0m19:28:48.175581 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:48.175581 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:48.182377 [debug] [Thread-2 (]: On model.instagrid.sg_production_plan: COMMIT
+[0m19:28:48.189875 [debug] [Thread-1 (]: On model.instagrid.dim_manufactured_units: COMMIT
+[0m19:28:48.190888 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_production_plan"
+[0m19:28:48.191886 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_manufactured_units"
+[0m19:28:48.193885 [debug] [Thread-2 (]: On model.instagrid.sg_production_plan: COMMIT
+[0m19:28:48.194895 [debug] [Thread-1 (]: On model.instagrid.dim_manufactured_units: COMMIT
+[0m19:28:48.197887 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m19:28:48.198912 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m19:28:48.207140 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.sg_production_plan"
+[0m19:28:48.213189 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.dim_manufactured_units"
+[0m19:28:48.215357 [debug] [Thread-2 (]: On model.instagrid.sg_production_plan: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.sg_production_plan"} */
+drop table if exists "instagrid"."public"."sg_production_plan__dbt_backup" cascade
+[0m19:28:48.218030 [debug] [Thread-1 (]: On model.instagrid.dim_manufactured_units: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.dim_manufactured_units"} */
+drop table if exists "instagrid"."public"."dim_manufactured_units__dbt_backup" cascade
+[0m19:28:48.228182 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m19:28:48.229354 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m19:28:48.231886 [debug] [Thread-2 (]: Timing info for model.instagrid.sg_production_plan (execute): 19:28:47.937947 => 19:28:48.231886
+[0m19:28:48.235381 [debug] [Thread-1 (]: Timing info for model.instagrid.dim_manufactured_units (execute): 19:28:47.954242 => 19:28:48.235381
+[0m19:28:48.236389 [debug] [Thread-2 (]: On model.instagrid.sg_production_plan: Close
+[0m19:28:48.237902 [debug] [Thread-1 (]: On model.instagrid.dim_manufactured_units: Close
+[0m19:28:48.239441 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F391D150>]}
+[0m19:28:48.241650 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F3A87CD0>]}
+[0m19:28:48.242649 [info ] [Thread-2 (]: 3 of 7 OK created sql table model public.sg_production_plan .................... [[32mSELECT 104[0m in 0.33s]
+[0m19:28:48.244650 [info ] [Thread-1 (]: 4 of 7 OK created sql table model public.dim_manufactured_units ................ [[32mSELECT 668[0m in 0.32s]
+[0m19:28:48.247423 [debug] [Thread-2 (]: Finished running node model.instagrid.sg_production_plan
+[0m19:28:48.249458 [debug] [Thread-1 (]: Finished running node model.instagrid.dim_manufactured_units
+[0m19:28:48.252581 [debug] [Thread-2 (]: Began running node model.instagrid.production_final
+[0m19:28:48.253595 [debug] [Thread-1 (]: Began running node model.instagrid.manufactured_final
+[0m19:28:48.254597 [info ] [Thread-2 (]: 5 of 7 START sql table model public.production_final ........................... [RUN]
+[0m19:28:48.256112 [info ] [Thread-1 (]: 6 of 7 START sql table model public.manufactured_final ......................... [RUN]
+[0m19:28:48.259218 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.instagrid.sg_production_plan, now model.instagrid.production_final)
+[0m19:28:48.261240 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.instagrid.dim_manufactured_units, now model.instagrid.manufactured_final)
+[0m19:28:48.261240 [debug] [Thread-2 (]: Began compiling node model.instagrid.production_final
+[0m19:28:48.263728 [debug] [Thread-1 (]: Began compiling node model.instagrid.manufactured_final
+[0m19:28:48.271897 [debug] [Thread-2 (]: Writing injected SQL for node "model.instagrid.production_final"
+[0m19:28:48.280003 [debug] [Thread-1 (]: Writing injected SQL for node "model.instagrid.manufactured_final"
+[0m19:28:48.285167 [debug] [Thread-2 (]: Timing info for model.instagrid.production_final (compile): 19:28:48.263728 => 19:28:48.284166
+[0m19:28:48.293070 [debug] [Thread-2 (]: Began executing node model.instagrid.production_final
+[0m19:28:48.310217 [debug] [Thread-2 (]: Writing runtime sql for node "model.instagrid.production_final"
+[0m19:28:48.311958 [debug] [Thread-1 (]: Timing info for model.instagrid.manufactured_final (compile): 19:28:48.272914 => 19:28:48.310768
+[0m19:28:48.312971 [debug] [Thread-1 (]: Began executing node model.instagrid.manufactured_final
+[0m19:28:48.314976 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.production_final"
+[0m19:28:48.326635 [debug] [Thread-1 (]: Writing runtime sql for node "model.instagrid.manufactured_final"
+[0m19:28:48.328148 [debug] [Thread-2 (]: On model.instagrid.production_final: BEGIN
+[0m19:28:48.330181 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:28:48.333263 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.manufactured_final"
+[0m19:28:48.334272 [debug] [Thread-1 (]: On model.instagrid.manufactured_final: BEGIN
+[0m19:28:48.338267 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:28:48.412783 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m19:28:48.414878 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.production_final"
+[0m19:28:48.415869 [debug] [Thread-2 (]: On model.instagrid.production_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.production_final"} */
+
+  
+    
+
+  create  table "instagrid"."public"."production_final__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+with final as
+(
+select distinct week,date_trunc('week',dimdate) as dim_date, extract(month from dimdate) as month, pn,productionplan from  "instagrid"."public"."sg_production_plan" as p
+left join "instagrid"."public"."dim_date" as d on concat('W',extract(week from d.dimdate))=p.week
+),
+
+trys as
+(
+select  distinct extract(week from dim_date),(extract(month from dim_date)) as month,pn,productionplan from final
+)
+
+select sum(productionplan) from trys
+group by month
+  );
+  
+[0m19:28:48.434106 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m19:28:48.435110 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.manufactured_final"
+[0m19:28:48.435110 [debug] [Thread-1 (]: On model.instagrid.manufactured_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.manufactured_final"} */
+
+  
+    
+
+  create  table "instagrid"."public"."manufactured_final__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with base as
+(
+select dimdate,product_type,plan from 
+"instagrid"."public"."dim_date" as d
+left join "instagrid"."public"."dim_manufactured_units"  as m 
+on d.dimdate=m.date
+),
+
+first1 as
+(
+
+select dimdate, concat('W',extract('week' from dimdate)) as year_week,product_type,coalesce(plan,0) as manufacturedplan
+ from base
+ where product_type is not null
+),
+
+nullvalues as
+(
+    select dimdate, concat('W',extract('week' from dimdate)) as year_week,product_type,coalesce(plan,0) as manufacturedplan
+ from base
+ where product_type is null
+),
+
+products as
+(
+select distinct product_type from first1
+where product_type is not null
+),
+
+decembervalues as
+(
+select dimdate,year_week,products.product_type as product_type , manufacturedplan from products 
+cross join nullvalues 
+),
+
+final as
+(
+select * from first1
+union all
+select * from  decembervalues
+)
+
+select * from final
+  );
+  
+[0m19:28:48.438035 [debug] [Thread-2 (]: SQL status: SELECT 12 in 0.0 seconds
+[0m19:28:48.444158 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.production_final"
+[0m19:28:48.445147 [debug] [Thread-2 (]: On model.instagrid.production_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.production_final"} */
+alter table "instagrid"."public"."production_final" rename to "production_final__dbt_backup"
+[0m19:28:48.447220 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:48.454817 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.production_final"
+[0m19:28:48.456325 [debug] [Thread-2 (]: On model.instagrid.production_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.production_final"} */
+alter table "instagrid"."public"."production_final__dbt_tmp" rename to "production_final"
+[0m19:28:48.458852 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:48.464244 [debug] [Thread-2 (]: On model.instagrid.production_final: COMMIT
+[0m19:28:48.465242 [debug] [Thread-1 (]: SQL status: SELECT 732 in 0.0 seconds
+[0m19:28:48.466564 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.production_final"
+[0m19:28:48.473652 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.manufactured_final"
+[0m19:28:48.474647 [debug] [Thread-2 (]: On model.instagrid.production_final: COMMIT
+[0m19:28:48.475726 [debug] [Thread-1 (]: On model.instagrid.manufactured_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.manufactured_final"} */
+alter table "instagrid"."public"."manufactured_final" rename to "manufactured_final__dbt_backup"
+[0m19:28:48.480619 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:48.480619 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m19:28:48.489661 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.manufactured_final"
+[0m19:28:48.494852 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.production_final"
+[0m19:28:48.496289 [debug] [Thread-1 (]: On model.instagrid.manufactured_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.manufactured_final"} */
+alter table "instagrid"."public"."manufactured_final__dbt_tmp" rename to "manufactured_final"
+[0m19:28:48.498303 [debug] [Thread-2 (]: On model.instagrid.production_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.production_final"} */
+drop table if exists "instagrid"."public"."production_final__dbt_backup" cascade
+[0m19:28:48.500524 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:48.508977 [debug] [Thread-1 (]: On model.instagrid.manufactured_final: COMMIT
+[0m19:28:48.510091 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m19:28:48.511183 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.manufactured_final"
+[0m19:28:48.515695 [debug] [Thread-2 (]: Timing info for model.instagrid.production_final (execute): 19:28:48.295074 => 19:28:48.514694
+[0m19:28:48.516694 [debug] [Thread-1 (]: On model.instagrid.manufactured_final: COMMIT
+[0m19:28:48.518212 [debug] [Thread-2 (]: On model.instagrid.production_final: Close
+[0m19:28:48.521768 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F3ABA9B0>]}
+[0m19:28:48.523237 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m19:28:48.530659 [debug] [Thread-1 (]: Using postgres connection "model.instagrid.manufactured_final"
+[0m19:28:48.524250 [info ] [Thread-2 (]: 5 of 7 OK created sql table model public.production_final ...................... [[32mSELECT 12[0m in 0.26s]
+[0m19:28:48.531657 [debug] [Thread-1 (]: On model.instagrid.manufactured_final: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.manufactured_final"} */
+drop table if exists "instagrid"."public"."manufactured_final__dbt_backup" cascade
+[0m19:28:48.534402 [debug] [Thread-2 (]: Finished running node model.instagrid.production_final
+[0m19:28:48.543868 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m19:28:48.546867 [debug] [Thread-1 (]: Timing info for model.instagrid.manufactured_final (execute): 19:28:48.315971 => 19:28:48.546867
+[0m19:28:48.548381 [debug] [Thread-1 (]: On model.instagrid.manufactured_final: Close
+[0m19:28:48.550061 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F3A7E980>]}
+[0m19:28:48.552223 [info ] [Thread-1 (]: 6 of 7 OK created sql table model public.manufactured_final .................... [[32mSELECT 732[0m in 0.29s]
+[0m19:28:48.553636 [debug] [Thread-1 (]: Finished running node model.instagrid.manufactured_final
+[0m19:28:48.556221 [debug] [Thread-2 (]: Began running node model.instagrid.monthly_backlog
+[0m19:28:48.557180 [info ] [Thread-2 (]: 7 of 7 START sql table model public.monthly_backlog ............................ [RUN]
+[0m19:28:48.559705 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.instagrid.production_final, now model.instagrid.monthly_backlog)
+[0m19:28:48.560713 [debug] [Thread-2 (]: Began compiling node model.instagrid.monthly_backlog
+[0m19:28:48.569668 [debug] [Thread-2 (]: Writing injected SQL for node "model.instagrid.monthly_backlog"
+[0m19:28:48.574426 [debug] [Thread-2 (]: Timing info for model.instagrid.monthly_backlog (compile): 19:28:48.561715 => 19:28:48.573424
+[0m19:28:48.575427 [debug] [Thread-2 (]: Began executing node model.instagrid.monthly_backlog
+[0m19:28:48.589960 [debug] [Thread-2 (]: Writing runtime sql for node "model.instagrid.monthly_backlog"
+[0m19:28:48.594619 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.monthly_backlog"
+[0m19:28:48.596620 [debug] [Thread-2 (]: On model.instagrid.monthly_backlog: BEGIN
+[0m19:28:48.598132 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m19:28:48.681608 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m19:28:48.681608 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.monthly_backlog"
+[0m19:28:48.684045 [debug] [Thread-2 (]: On model.instagrid.monthly_backlog: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.monthly_backlog"} */
+
+  
+    
+
+  create  table "instagrid"."public"."monthly_backlog__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with monthlymanufactured as
+(
+select extract(month from dimdate) as month,product_type,sum(manufacturedplan) as monthlymanufactured from 
+"instagrid"."public"."manufactured_final"
+group by extract(month from dimdate),product_type
+),
+
+monthlyproduction as
+(
+select distinct week, extract(month from dimdate) as month, pn,productionplan from  "instagrid"."public"."sg_production_plan" as p
+left join "instagrid"."public"."dim_date" as d on concat('W',extract(week from d.dimdate))=p.week
+
+),
+
+productionfinal as
+(
+select month,pn, sum(productionplan) as monthlyproductionplan
+from monthlyproduction
+group by month,pn
+)
+
+select productionfinal.month as month,product_type,monthlyproductionplan, monthlymanufactured from productionfinal
+join monthlymanufactured on 
+productionfinal.month=monthlymanufactured.month and productionfinal.pn=monthlymanufactured.product_type
+  );
+  
+[0m19:28:48.710931 [debug] [Thread-2 (]: SQL status: SELECT 24 in 0.0 seconds
+[0m19:28:48.714900 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.monthly_backlog"
+[0m19:28:48.716351 [debug] [Thread-2 (]: On model.instagrid.monthly_backlog: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.monthly_backlog"} */
+alter table "instagrid"."public"."monthly_backlog__dbt_tmp" rename to "monthly_backlog"
+[0m19:28:48.720925 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m19:28:48.726963 [debug] [Thread-2 (]: On model.instagrid.monthly_backlog: COMMIT
+[0m19:28:48.727939 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.monthly_backlog"
+[0m19:28:48.729031 [debug] [Thread-2 (]: On model.instagrid.monthly_backlog: COMMIT
+[0m19:28:48.732049 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m19:28:48.738749 [debug] [Thread-2 (]: Using postgres connection "model.instagrid.monthly_backlog"
+[0m19:28:48.740760 [debug] [Thread-2 (]: On model.instagrid.monthly_backlog: /* {"app": "dbt", "dbt_version": "1.5.1", "profile_name": "instagrid", "target_name": "dev", "node_id": "model.instagrid.monthly_backlog"} */
+drop table if exists "instagrid"."public"."monthly_backlog__dbt_backup" cascade
+[0m19:28:48.743799 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m19:28:48.749811 [debug] [Thread-2 (]: Timing info for model.instagrid.monthly_backlog (execute): 19:28:48.576425 => 19:28:48.749811
+[0m19:28:48.752498 [debug] [Thread-2 (]: On model.instagrid.monthly_backlog: Close
+[0m19:28:48.754509 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80b4e259-97f2-411b-8d3f-b2dec98367fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F3A53850>]}
+[0m19:28:48.757019 [info ] [Thread-2 (]: 7 of 7 OK created sql table model public.monthly_backlog ....................... [[32mSELECT 24[0m in 0.20s]
+[0m19:28:48.759989 [debug] [Thread-2 (]: Finished running node model.instagrid.monthly_backlog
+[0m19:28:48.764084 [debug] [MainThread]: Using postgres connection "master"
+[0m19:28:48.764920 [debug] [MainThread]: On master: BEGIN
+[0m19:28:48.766918 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:28:48.845948 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m19:28:48.845948 [debug] [MainThread]: On master: COMMIT
+[0m19:28:48.846972 [debug] [MainThread]: Using postgres connection "master"
+[0m19:28:48.848464 [debug] [MainThread]: On master: COMMIT
+[0m19:28:48.849494 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m19:28:48.851526 [debug] [MainThread]: On master: Close
+[0m19:28:48.853525 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:28:48.854677 [debug] [MainThread]: Connection 'list_instagrid' was properly closed.
+[0m19:28:48.855695 [debug] [MainThread]: Connection 'list_instagrid_public' was properly closed.
+[0m19:28:48.856693 [debug] [MainThread]: Connection 'model.instagrid.manufactured_final' was properly closed.
+[0m19:28:48.858218 [debug] [MainThread]: Connection 'model.instagrid.monthly_backlog' was properly closed.
+[0m19:28:48.859767 [info ] [MainThread]: 
+[0m19:28:48.861776 [info ] [MainThread]: Finished running 7 table models in 0 hours 0 minutes and 2.17 seconds (2.17s).
+[0m19:28:48.866779 [debug] [MainThread]: Command end result
+[0m19:28:48.880458 [info ] [MainThread]: 
+[0m19:28:48.882455 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:28:48.887972 [info ] [MainThread]: 
+[0m19:28:48.890136 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m19:28:48.893505 [debug] [MainThread]: Command `dbt run` succeeded at 19:28:48.893505 after 2.68 seconds
+[0m19:28:48.896523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F0FF4A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F3485DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6F38F2950>]}
+[0m19:28:48.898054 [debug] [MainThread]: Flushing usage events
